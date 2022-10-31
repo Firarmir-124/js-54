@@ -1,0 +1,25 @@
+.onCell {
+    background: url('/src/img/dirt.jpg') no-repeat;
+    background-size: cover;
+}
+
+.onCell.active {
+    color: red;
+    background: #fff;
+    pointer-events: none;
+}
+
+.onCell {
+    position: relative;
+    color: #fff;
+}
+
+
+.onCell.red::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    background: url('/src/img/diamond.png') no-repeat;
+
+}
